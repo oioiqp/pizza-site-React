@@ -81,19 +81,19 @@ function JournalForm({ onSubmit, data, onDelete }) {
 			<div className={styles['form-row']}>
 				<Input appearence="title" type='text' ref={titleRef} onChange={onChange} value={values.title} name='title' isValid={!isValid.title}/>
 				{data?.id && <button className={styles['delete']} type="button" onClick={deleteJournalItem}>
-					<img src="/archive.svg" alt="Кнопка удалить" />
+					<img src="./archive.svg" alt="Кнопка удалить" />
 				</button>}
 			</div>
 			<div className={styles['form-row']}>
 				<label htmlFor="date" className={styles['form-label']}>
-					<img src='/calendar.svg' alt='Иконка календаря'/>
+					<img src='./calendar.svg' alt='Иконка календаря'/>
 					<span>Дата</span>
 				</label>
 				<Input type='date' ref={dateRef} onChange={onChange} name='date' value={values.date ? new Date(values.date).toISOString().slice(0, 10) : ''} id="date" isValid={!isValid.title}/>
 			</div>
 			<div className={styles['form-row']}>
 				<label htmlFor="tag" className={styles['form-label']}>
-					<img src='/folder.svg' alt='Иконка папки'/>
+					<img src='./folder.svg' alt='Иконка папки'/>
 					<span>Метки</span>
 				</label>
 				<Input type='text' onChange={onChange} id="tag" value={values.tag} name='tag' />
