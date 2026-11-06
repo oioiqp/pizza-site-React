@@ -1,28 +1,10 @@
-.input-title {
-	border: none;
-	background: none;
-	font-size: 32px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: normal;
-	font-family: 'Source Sans 3', sans-serif;
-	border-bottom: 1px solid #323232;
-	width: 100%;
-}
-
 .input {
-	border: none;
-	background: none;
-	font-size: 14px;
+	font-size: 17px;
 	font-style: normal;
-	font-weight: 600;
-	line-height: normal;
-	font-family: 'Source Sans 3', sans-serif;
-	border-bottom: 1px solid #323232;
-	width: 100%;
-}
-
-.invalid {
-	border: 1px solid red;
-	background: rgb(68, 6, 6);
+	font-weight: 400;
+	color: var(--text-color);
+	border: 1px solid #EEE;
+	box-shadow: 15px 20px 45px 0px rgba(233, 233, 233, 0.25);
+	border-radius: 10px;
+	padding: 20px;
 }
